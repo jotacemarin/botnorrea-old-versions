@@ -1,0 +1,25 @@
+module.exports = {
+    /** emoji constants */
+    EMOJI_ROBOT: ':robot:',
+    EMOJI_HAND: ':hand_splayed:',
+    EMOJI_DOOR: ':door:',
+    EMOJI_PLAY: ':arrow_forward:',
+    EMOJI_NEXT: ':track_next:',
+    EMOJI_PREVIOUS: ':track_previous:',
+    EMOJI_STOP: ':stop_button:',
+    EMOJI_DICE: ':game_die:',
+    EMOJI_SLOT: ':slot_machine:',
+    EMOJI_INFO: ':information_source:',
+    EMOJI_NOTEPAD: ':notepad_spiral:',
+    /** content help commands */
+    BODY_ROBOT: '(Dev) Request external APIs, endpoint *api.kanye.rest*',
+    BODY_HAND: '(Dev) Get response a grettings from **  botnorrea**',
+    BODY_DOOR: 'Disconnect bot of voice channel',
+    BODY_PLAY: `Added song to audio cast queue.\nHow to use:\n:arrow_forward: **youtube_url_video**`,
+    BODY_NEXT: 'Skip current song',
+    BODY_PREVIOUS: '(Dev) back to last song',
+    BODY_STOP: `Stop audio cast and disconnect bot of voice channel.`,
+    BODY_DICE: 'Throw a dice, return number from 1 to 6.',
+    BODY_SLOT: `Return a new random sorted and splitted list from other list.\nHow to use:\n:slot_machine: **length_new_list:number** **word word word... n_words**\n\t*Example:\n\t:slot_machine: 3 a_word new_word other_word another_word\n\tReturns:\n\t:notepad_spiral: another_word a_word other_word*`,
+    BODY_INFO: 'Return this message.',
+}

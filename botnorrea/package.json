@@ -1,0 +1,31 @@
+{
+  "name": "botnorrea",
+  "version": "1.0.0",
+  "description": "botnorrea",
+  "main": "src/index.js",
+  "author": "jotacemarin@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "test": "NODE_ENV=test && jest --detectOpenHandles --forceExit",
+    "test:win": "SET NODE_ENV=test && jest --detectOpenHandles --forceExit",
+    "cp:gdrive_account": "cp botnorrea_credentials.json src/constants/botnorrea_credentials.json",
+    "cp:firebase_account": "cp botnorrea-firebase-adminsdk.json src/constants/botnorrea-firebase-adminsdk.json",
+    "cp": "yarn cp:gdrive_account && yarn cp:firebase_account",
+    "server:dev": "yarn cp && nodemon src/index.js",
+    "start": "yarn cp && node src/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.3",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.9.0",
+    "googleapis": "39",
+    "telegraf": "^4.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
+  }
+}
